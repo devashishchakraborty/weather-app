@@ -2,22 +2,81 @@ html body{
     margin: 0;
     padding: 0;
     height: 100%;
+    --main-theme-color: blueviolet;
+    --dark-button-color: #7a26c8;
+    box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
 .container header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: var(--main-theme-color);
     color: white;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 2em;
     font-weight: bold;
-    padding: 8px;
+    padding: 4px;
 }
 
 .container header img{
     height: 2em;
     width: 2em;
+}
+
+.container main{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.searchBar{
+    display: flex;
+    align-self: center;
+}
+
+.searchBar label{
+    font-size: 1.2em;
+}
+
+.searchBar form{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.searchBar input{
+    font-size: 1.2em;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--main-theme-color);
+    
+}
+
+.searchBar button{
+    background-color: var(--main-theme-color);
+    border-radius: 50%;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar button:hover{
+    background-color: var(--dark-button-color);
+}
+
+.searchBar button:active{
+    transform: translateX(1px) translateY(1px);
+}
+
+.searchBar button svg{
+    color: white;
 }

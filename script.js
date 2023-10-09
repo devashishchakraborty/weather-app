@@ -15,12 +15,12 @@ async function displayWeatherDetails(place) {
             <div>${weather.current.condition.text}</div>
         </div>
         <div class="actualTemp">${weather.current.temp_c}°C</div>
-        <div class="feelsLikeTemp">Feels Like ${weather.current.feelslike_c}°C</div>
-        <div class="humidity">Humidity ${weather.current.humidity}%</div>
-        <div class="cloud">Cloudiness ${weather.current.cloud}%</div>
-        <div class="windSpeed">Wind Speed ${weather.current.wind_kph}km/h</div>
-        <div class="windDirection">Wind Direction ${weather.current.wind_dir}</div>
-        <div class="uv">UV Index ${weather.current.uv}</div>
+        <div class="feelsLikeTemp">Feels Like: ${weather.current.feelslike_c}°C</div>
+        <div class="humidity">Humidity: ${weather.current.humidity}%</div>
+        <div class="cloud">Cloudiness: ${weather.current.cloud}%</div>
+        <div class="windSpeed">Wind Speed: ${weather.current.wind_kph}km/h</div>
+        <div class="windDirection">Wind Direction: ${weather.current.wind_dir}</div>
+        <div class="uv">UV Index: ${weather.current.uv}</div>
     `
 
 }

@@ -95,8 +95,8 @@ main .weatherInfoCard{
     background-color: var(--weatherCard-bg-color);
     padding: 2em;
     border-radius: 1em;
-    grid-row-gap: 8px;
-    grid-column-gap: 16px;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
     align-items: center;
 }
 
